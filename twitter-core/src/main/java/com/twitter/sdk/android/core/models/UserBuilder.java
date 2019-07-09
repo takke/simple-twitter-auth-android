@@ -54,7 +54,7 @@ public class UserBuilder {
     private boolean protectedUser;
     private String screenName;
     private boolean showAllInlineMedia;
-    private Tweet status;
+//    private Tweet status;
     private int statusesCount;
     private String timeZone;
     private String url;
@@ -233,10 +233,10 @@ public class UserBuilder {
         return this;
     }
 
-    public UserBuilder setStatus(Tweet status) {
-        this.status = status;
-        return this;
-    }
+//    public UserBuilder setStatus(Tweet status) {
+//        this.status = status;
+//        return this;
+//    }
 
     public UserBuilder setStatusesCount(int statusesCount) {
         this.statusesCount = statusesCount;
@@ -282,7 +282,7 @@ public class UserBuilder {
                 profileBannerUrl, profileImageUrl, profileImageUrlHttps,
                 profileLinkColor, profileSidebarBorderColor, profileSidebarFillColor,
                 profileTextColor, profileUseBackgroundImage, protectedUser, screenName,
-                showAllInlineMedia, status, statusesCount, timeZone, url, utcOffset, verified,
+                showAllInlineMedia, statusesCount, timeZone, url, utcOffset, verified,
                 withheldInCountries, withheldScope);
     }
 }

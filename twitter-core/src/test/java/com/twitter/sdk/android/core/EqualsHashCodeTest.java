@@ -20,8 +20,6 @@ package com.twitter.sdk.android.core;
 
 import com.twitter.sdk.android.core.internal.oauth.GuestAuthToken;
 import com.twitter.sdk.android.core.internal.oauth.OAuth2Token;
-import com.twitter.sdk.android.core.models.Tweet;
-import com.twitter.sdk.android.core.models.TweetBuilder;
 
 import org.junit.Test;
 

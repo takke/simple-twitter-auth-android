@@ -263,14 +263,14 @@ public class User implements Serializable, Identifiable {
     @SerializedName("show_all_inline_media")
     public final boolean showAllInlineMedia;
 
-    /**
-     * Nullable. If possible, the user's most recent tweet or retweet. In some circumstances, this
-     * data cannot be provided and this field will be omitted, null, or empty. Perspectival
-     * attributes within tweets embedded within users cannot always be relied upon. See Why are
-     * embedded objects stale or inaccurate?.
-     */
-    @SerializedName("status")
-    public final Tweet status;
+//    /**
+//     * Nullable. If possible, the user's most recent tweet or retweet. In some circumstances, this
+//     * data cannot be provided and this field will be omitted, null, or empty. Perspectival
+//     * attributes within tweets embedded within users cannot always be relied upon. See Why are
+//     * embedded objects stale or inaccurate?.
+//     */
+//    @SerializedName("status")
+//    public final Tweet status;
 
     /**
      * The number of tweets (including retweets) issued by the user.
@@ -326,7 +326,7 @@ public class User implements Serializable, Identifiable {
             String profileLinkColor, String profileSidebarBorderColor,
             String profileSidebarFillColor, String profileTextColor,
             boolean profileUseBackgroundImage, boolean protectedUser, String screenName,
-            boolean showAllInlineMedia, Tweet status, int statusesCount, String timeZone,
+            boolean showAllInlineMedia, int statusesCount, String timeZone,
             String url, int utcOffset, boolean verified, List<String> withheldInCountries,
             String withheldScope) {
         this.contributorsEnabled = contributorsEnabled;
@@ -363,7 +363,7 @@ public class User implements Serializable, Identifiable {
         this.protectedUser = protectedUser;
         this.screenName = screenName;
         this.showAllInlineMedia = showAllInlineMedia;
-        this.status = status;
+//        this.status = status;
         this.statusesCount = statusesCount;
         this.timeZone = timeZone;
         this.url = url;
