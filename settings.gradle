@@ -17,7 +17,7 @@
 
 include ':twitter-core'
 //include ':tweet-composer'
-include ':tweet-ui'
+//include ':tweet-ui'
 //include ':twitter-mopub'
 //include ':twitter'
 //include ':samples:app'
