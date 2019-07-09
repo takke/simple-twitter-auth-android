@@ -74,3 +74,5 @@ dependencies {
     }
     testCompile dependency.equalsVerifier
 }
+
+apply from: rootProject.file('maven_publish.gradle')

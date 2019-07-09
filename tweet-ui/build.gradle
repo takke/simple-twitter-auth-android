@@ -85,3 +85,5 @@ dependencies {
         exclude group: 'org.apache.httpcomponents', module: 'httpclient'
     }
 }
+
+apply from: rootProject.file('maven_publish.gradle')
