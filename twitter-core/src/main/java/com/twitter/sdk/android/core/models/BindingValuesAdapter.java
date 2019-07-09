@@ -80,8 +80,8 @@ public class BindingValuesAdapter implements JsonSerializer<BindingValues>,
         switch (typeObj.getAsString()) {
             case STRING_TYPE:
                 return context.deserialize(obj.get(TYPE_VALUE_MEMBER), String.class);
-            case IMAGE_TYPE:
-                return context.deserialize(obj.get(IMAGE_VALUE_MEMBER), ImageValue.class);
+//            case IMAGE_TYPE:
+//                return context.deserialize(obj.get(IMAGE_VALUE_MEMBER), ImageValue.class);
             case USER_TYPE:
                 return context.deserialize(obj.get(USER_VALUE_MEMBER), UserValue.class);
             case BOOLEAN_TYPE:

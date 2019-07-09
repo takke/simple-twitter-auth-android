@@ -17,7 +17,6 @@
 
 package com.twitter.sdk.android.core;
 
-import com.twitter.sdk.android.core.internal.VineCardUtils;
 import com.twitter.sdk.android.core.models.BindingValues;
 import com.twitter.sdk.android.core.models.Card;
 import com.twitter.sdk.android.core.models.UserValue;

@@ -26,13 +26,6 @@ import com.twitter.sdk.android.core.models.BindingValuesAdapter;
 import com.twitter.sdk.android.core.models.SafeListAdapter;
 import com.twitter.sdk.android.core.models.SafeMapAdapter;
 import com.twitter.sdk.android.core.services.AccountService;
-import com.twitter.sdk.android.core.services.CollectionService;
-import com.twitter.sdk.android.core.services.ConfigurationService;
-import com.twitter.sdk.android.core.services.FavoriteService;
-import com.twitter.sdk.android.core.services.ListService;
-import com.twitter.sdk.android.core.services.MediaService;
-import com.twitter.sdk.android.core.services.SearchService;
-import com.twitter.sdk.android.core.services.StatusesService;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -124,57 +117,6 @@ public class TwitterApiClient {
      */
     public AccountService getAccountService() {
         return getService(AccountService.class);
-    }
-
-    /**
-     * @return {@link com.twitter.sdk.android.core.services.FavoriteService} to access TwitterApi
-     */
-    public FavoriteService getFavoriteService() {
-        return getService(FavoriteService.class);
-    }
-
-    /**
-     * @return {@link com.twitter.sdk.android.core.services.StatusesService} to access TwitterApi
-     */
-    public StatusesService getStatusesService() {
-        return getService(StatusesService.class);
-    }
-
-    /**
-     * @return {@link com.twitter.sdk.android.core.services.SearchService} to access TwitterApi
-     */
-    public SearchService getSearchService() {
-        return getService(SearchService.class);
-    }
-
-    /**
-     * @return {@link com.twitter.sdk.android.core.services.ListService} to access TwitterApi
-     */
-    public ListService getListService() {
-        return getService(ListService.class);
-    }
-
-    /**
-     * Use CollectionTimeline directly, CollectionService is expected to change.
-     * @return {@link CollectionService} to access TwitterApi
-     */
-    public CollectionService getCollectionService() {
-        return getService(CollectionService.class);
-    }
-
-    /**
-     * @return {@link com.twitter.sdk.android.core.services.ConfigurationService} to access TwitterApi
-     */
-    public ConfigurationService getConfigurationService() {
-        return getService(ConfigurationService.class);
-    }
-
-    /**
-     * @return {@link com.twitter.sdk.android.core.services.MediaService} to access Twitter API
-     * upload endpoints.
-     */
-    public MediaService getMediaService() {
-        return getService(MediaService.class);
     }
 
     /**
