@@ -34,8 +34,3 @@ subprojects { Project subproject ->
         jcenter()
     }
 }
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.2.1'
-}
-
