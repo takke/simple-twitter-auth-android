@@ -78,11 +78,6 @@ public class BindingValuesAdapterTest {
         assertTrue(card.bindingValues.containsKey("player_height"));
         assertEquals("535", card.bindingValues.get("player_height"));
         assertTrue(card.bindingValues.containsKey("player_image"));
-        final ImageValue imageValue = card.bindingValues.get("player_image");
-        assertNotNull(imageValue);
-        assertEquals(480, imageValue.height);
-        assertEquals(480, imageValue.width);
-        assertEquals("https://o.twimg.com/qwhjddd", imageValue.url);
         assertTrue(card.bindingValues.containsKey("player_stream_content_type"));
         assertTrue(card.bindingValues.containsKey("player_stream_url"));
         assertTrue(card.bindingValues.containsKey("player_url"));
