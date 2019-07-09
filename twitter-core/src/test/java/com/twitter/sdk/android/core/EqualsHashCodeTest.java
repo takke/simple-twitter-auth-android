@@ -78,14 +78,4 @@ public class EqualsHashCodeTest {
                 .verify();
     }
 
-    @Test
-    public void testTweet() throws Exception {
-        final Tweet tweet01 = new TweetBuilder().setId(123456).build();
-        final Tweet tweet02 = new TweetBuilder().setId(654321).build();
-        EqualsVerifier.forClass(Tweet.class)
-                .suppress(Warning.STRICT_INHERITANCE)
-                .withPrefabValues(Tweet.class, tweet01, tweet02)
-                .withOnlyTheseFields("id")
-                .verify();
-    }
 }

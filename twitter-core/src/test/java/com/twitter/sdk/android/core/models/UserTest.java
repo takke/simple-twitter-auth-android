@@ -73,7 +73,6 @@ public class UserTest {
             assertEquals(EXPECTED_SCREEN_NAME, user.screenName);
             assertEquals(EXPECTED_PROFILE_IMAGE_URL_HTTPS, user.profileImageUrlHttps);
             assertEquals(EXPECTED_VERIFIED, user.verified);
-            assertNotNull(user.status);
             assertNotNull(user.withheldInCountries);
             assertEquals(1, user.withheldInCountries.size());
             assertEquals(EXPECTED_WITHHELD_IN_COUNTRIES, user.withheldInCountries.get(0));
