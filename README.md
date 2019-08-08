@@ -1,3 +1,5 @@
+**本リポジトリは TwitPane 用に認証部分に特化した Twitter Kit for Android です。ご利用はおすすめしません。**
+
 **Twitter will be discontinuing support for Twitter Kit on October 31, 2018. [Read the blog post here](https://blog.twitter.com/developer/en_us/topics/tools/2018/discontinuing-support-for-twitter-kit-sdk.html).**
 
 # Twitter Kit for Android
@@ -56,6 +58,13 @@ To run the sample app
 ```
 ./gradlew :samples:app:installDebug
 ```
+
+
+To deploy to ```~/.m2/repository/com/twitter/sdk/android/```.
+```
+$ ./gradlew publishToMavenLocal
+```
+
 
 
 ## Contributing
