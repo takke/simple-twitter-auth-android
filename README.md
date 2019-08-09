@@ -38,12 +38,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.takke:twitter-kit-android:-SNAPSHOT'
+    implementation 'com.github.takke:simple-twitter-auth-android:-SNAPSHOT'
 }
 
 ```
 
-[takke / twitter\-kit\-android](https://jitpack.io/#takke/twitter-kit-android/-SNAPSHOT)
+[takke / simple\-twitter\-auth\-android](https://jitpack.io/#takke/simple-twitter-auth-android/-SNAPSHOT)
 
 ### Building from source
 
