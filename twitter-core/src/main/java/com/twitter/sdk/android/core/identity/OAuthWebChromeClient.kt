@@ -15,10 +15,15 @@
  *
  */
 
-package com.twitter.sdk.android.core;
+package com.twitter.sdk.android.core.identity
 
-public class TwitterTestUtils {
-    public static void resetTwitter() {
-//        Twitter.instance = null;
+import android.webkit.ConsoleMessage
+import android.webkit.WebChromeClient
+
+internal class OAuthWebChromeClient : WebChromeClient() {
+
+    override fun onConsoleMessage(consoleMessage: ConsoleMessage): Boolean {
+        //Do not log
+        return true
     }
 }

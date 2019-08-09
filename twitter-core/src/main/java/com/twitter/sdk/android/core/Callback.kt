@@ -15,10 +15,26 @@
  *
  */
 
-package com.twitter.sdk.android.core;
+package com.twitter.sdk.android.core
 
-public class TwitterTestUtils {
-    public static void resetTwitter() {
-//        Twitter.instance = null;
-    }
+/**
+ * Communicates responses from a server or offline requests. One and only one method will be
+ * invoked in response to a given request.
+ *
+ * @param <T> expected response type</T>
+ */
+abstract class Callback<T> {
+
+    /**
+     * Called when call completes successfully.
+     *
+     * @param result the parsed result.
+     */
+    abstract fun success(result: T)
+
+    /**
+     * Unsuccessful call due to network failure, non-2XX status code, or unexpected
+     * exception.
+     */
+    abstract fun failure(exception: TwitterException)
 }

@@ -15,10 +15,18 @@
  *
  */
 
-package com.twitter.sdk.android.core;
+package com.twitter.sdk.android.core.identity
 
-public class TwitterTestUtils {
-    public static void resetTwitter() {
-//        Twitter.instance = null;
-    }
+/**
+ * Exception thrown when a WebDialog error occurs.
+ */
+internal class WebViewException(
+        val errorCode: Int,
+        description: String?,
+        val failingUrl: String?
+) : Exception(description) {
+
+    val description: String?
+        get() = message
+
 }

@@ -17,20 +17,18 @@
 
 package com.twitter.sdk.android.core;
 
-import java.util.concurrent.ConcurrentHashMap;
-
 public final class TwitterCoreTestUtils {
 
     private TwitterCoreTestUtils() {}
 
-    public static TwitterCore createTwitterCore(TwitterAuthConfig authConfig,
-            ConcurrentHashMap<Session, TwitterApiClient> clients, TwitterApiClient guestClient) {
-
-        TwitterCore.instance = new TwitterCore(authConfig, clients, guestClient);
-        return TwitterCore.instance;
-    }
+//    public static TwitterCore createTwitterCore(TwitterAuthConfig authConfig,
+//            ConcurrentHashMap<Session, TwitterApiClient> clients, TwitterApiClient guestClient) {
+//
+//        TwitterCore.instance = new TwitterCore(authConfig, clients, guestClient);
+//        return TwitterCore.instance;
+//    }
 
     public static void resetTwitterCore() {
-        TwitterCore.instance = null;
+//        TwitterCore.instance = null;
     }
 }

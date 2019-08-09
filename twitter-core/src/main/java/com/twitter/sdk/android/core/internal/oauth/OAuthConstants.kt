@@ -15,10 +15,11 @@
  *
  */
 
-package com.twitter.sdk.android.core;
+package com.twitter.sdk.android.core.internal.oauth
 
-public class TwitterTestUtils {
-    public static void resetTwitter() {
-//        Twitter.instance = null;
-    }
+object OAuthConstants {
+    // OAuth1.0a parameter constants.
+    const val PARAM_TOKEN = "oauth_token"
+    const val PARAM_VERIFIER = "oauth_verifier"
+
 }

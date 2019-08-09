@@ -15,10 +15,14 @@
  *
  */
 
-package com.twitter.sdk.android.core;
+package com.twitter.sdk.android.core
 
-public class TwitterTestUtils {
-    public static void resetTwitter() {
-//        Twitter.instance = null;
-    }
+/**
+ * Represents a Twitter error. Base class for all Twitter related exceptions.
+ */
+open class TwitterException : RuntimeException {
+
+    constructor(detailMessage: String) : super(detailMessage)
+
+    constructor(detailMessage: String, throwable: Throwable) : super(detailMessage, throwable) {}
 }
