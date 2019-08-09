@@ -16,6 +16,7 @@
  */
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -57,17 +58,19 @@ android {
 }
 
 dependencies {
-    api dependency.retrofit
-    implementation dependency.retrofitGsonConverter
-    api dependency.gson
-    api dependency.okHttp
+    implementation dependency.okHttp
+    implementation dependency.twitter4j
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
 
     androidTestImplementation dependency.mockito
     androidTestImplementation dependency.dexmakerMockito
 
     testImplementation dependency.mockito
     testImplementation dependency.junit
-    testImplementation dependency.retrofitMock
     testImplementation(dependency.robolectric) {
         exclude group: 'commons-logging', module: 'commons-logging'
         exclude group: 'org.apache.httpcomponents', module: 'httpclient'

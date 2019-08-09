@@ -14,6 +14,7 @@ ext {
             // Gradle plugins
             spoonGradlePlugin          : 'com.stanfy.spoon:spoon-gradle-plugin:1.0.4',
             androidGradlePlugin        : 'com.android.tools.build:gradle:3.5.0-beta05',
+            kotlinGradlePlugin         : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version",
 
             // Mopub
             mopub                      : 'com.mopub:mopub-sdk-native-static:4.11.0@aar',
@@ -34,13 +35,10 @@ ext {
             dexmakerMockito            : 'com.linkedin.dexmaker:dexmaker-mockito:2.2.0',
 
             // Other
+            twitter4j                  : 'org.twitter4j:twitter4j-core:4.0.7',
             picasso                    : 'com.squareup.picasso:picasso:2.5.2',
             supportCompatV4            : 'com.android.support:support-compat:26.1.0',
             supportCoreV4              : 'com.android.support:support-core-ui:26.1.0',
-            retrofit                   : 'com.squareup.retrofit2:retrofit:2.3.0',
-            retrofitMock               : 'com.squareup.retrofit2:retrofit-mock:2.3.0',
-            retrofitGsonConverter      : 'com.squareup.retrofit2:converter-gson:2.3.0',
-            gson                       : 'com.google.code.gson:gson:2.7',
             okHttp                     : 'com.squareup.okhttp3:okhttp:3.8.0',
             okHttpInterceptor          : 'com.squareup.okhttp3:logging-interceptor:3.8.0',
             design                     : 'com.android.support:design:26.1.0',
